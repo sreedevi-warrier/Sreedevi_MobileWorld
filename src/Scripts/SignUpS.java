@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -48,11 +49,19 @@ public class SignUpS {
 			Thread.sleep(2000);
 			page.reg().click();
 			Thread.sleep(2000);
-			//driver.switchTo().alert().accept();
-			//Thread.sleep(2000);
+		
 			page.Signin().click();
+			
+			
+			
+			
+
+			
 			Thread.sleep(2000);
 			//driver.switchTo().alert().accept();
+			
+			
+			
 			driver.close();
          
 
@@ -68,6 +77,7 @@ public class SignUpS {
         data [0][4]="08/26/2000";
         data [0][5]="123456789";
         data [0][6]="Hai,Hello...";
+        
         data [1][0]="Ss";
         data [1][1]="c";
         data [1][2]="sree";
@@ -75,7 +85,7 @@ public class SignUpS {
         data [1][4]="45/02/2000";
         data [1][5]="1234";
         data [1][6]="";
+		return data;
        
-       return data; 
     }
 }

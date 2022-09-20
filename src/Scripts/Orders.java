@@ -15,6 +15,6 @@ public class Orders {
 		homepageO Lgp = new homepageO(driver);
 		Lgp.goTo();
 		Lgp.OrderPage("Sree","CVJ","sree@gmail.com","hello123","1234567898","house","town","Tsr","12345","2","3");
-
-}
+		
+	}
 }

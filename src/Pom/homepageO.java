@@ -66,9 +66,6 @@ WebElement Address2;
 @FindBy(id = "inputCity")
 WebElement City;
 
-//@FindBy(id = "inputState")
-//WebElement State;
-
 @FindBy(xpath ="//select[@id='inputState']")
 WebElement state;
 
@@ -77,9 +74,6 @@ WebElement tamilnadu;
 
 @FindBy(id = "inputZip")
 WebElement Zip;
-
-//@FindBy(xpath = "//legend[@class='col-form-label col-sm-2 pt-0']")
-//WebElement Brand;
 
 @FindBy(xpath = "//input[@rel='apple']")
 WebElement Apple;

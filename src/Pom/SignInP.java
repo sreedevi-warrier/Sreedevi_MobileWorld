@@ -22,6 +22,9 @@ public class SignInP {
         WebElement password;
         @FindBy(xpath="//a[.='Log In']")
         WebElement logbutton;
+        @FindBy(xpath="//a[normalize-space()='Sign up']")
+        WebElement signInL;
+        
         
         public void goTo()
         {
@@ -42,6 +45,9 @@ public class SignInP {
         public WebElement loginbutton()
         {
             return logbutton;
+        }
+        public WebElement signuplink() {
+        	return signInL;
         }
        
     }
